@@ -104,15 +104,15 @@ client.println("HTTP/1.1 200 OK");
  client.println("<div class=\"container\">");
  client.println("<div class=\"starter-template\"><h1>Styled Example</h1>");
  client.println("<p class=\"lead\">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>");          
- client.print("Led pin is now: ");
+ client.print("<div class=\"alert alert-info\">Led pin is now: ");
  if( value == HIGH) {
  client.print("On"); 
  } else {
   client.print("Off");
  }
- client.println("<br/><br/>");
- client.println("<a href=\"/LED=ON\"\"><button>Turn On</button></a>"); 
- client.println("<a href=\"/LED=OFF\"\"><button>Turn Off</button></a><br/>");
+ client.println("</div><br/>");
+ client.println("<a href=\"/LED=ON\"\"><button class=\"btn btn-success\">Turn On</button></a>"); 
+ client.println("<a href=\"/LED=OFF\"\"><button class=\"btn btn-warning\">Turn Off</button></a><br/>");
  client.println("</div></div><!-- /.container -->");  
 client.println("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>");
 client.println("<script src=\"http://getbootstrap.com/dist/js/bootstrap.min.js\"></script>");
